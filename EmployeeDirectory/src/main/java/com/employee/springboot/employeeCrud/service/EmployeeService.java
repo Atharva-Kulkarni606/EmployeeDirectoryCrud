@@ -1,13 +1,10 @@
-package com.employee.springboot.employeeCrud.dao;
-
+package com.employee.springboot.employeeCrud.service;
 
 import com.employee.springboot.employeeCrud.entity.Employee;
 
 import java.util.List;
 
-public interface EmployeeDAO {
-
-    //Get all the employees
+public interface EmployeeService {
     List<Employee> findAll();
     Employee findById(int id);
     Employee save(Employee employee);
